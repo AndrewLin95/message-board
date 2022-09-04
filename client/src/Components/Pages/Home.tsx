@@ -11,9 +11,10 @@ const Home: FC = () => {
   const [data, setData] = useState<Data[]>([]);
 
   useEffect(() => {
-    fetch("/api")
+    fetch("/api/data")
       .then((res) => res.json())
       .then((data) => setData(data))
+      .catch((err) => console.log(err))
   }, []);
 
   useEffect(() => {
