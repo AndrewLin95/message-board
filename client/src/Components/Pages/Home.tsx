@@ -10,6 +10,7 @@ interface Data {
 const Home: FC = () => {
   const [data, setData] = useState<Data[]>([]);
 
+  // to use Axios
   useEffect(() => {
     fetch("/api/data")
       .then((res) => res.json())

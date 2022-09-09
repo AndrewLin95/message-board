@@ -18,6 +18,7 @@ const NewMessage = () => {
     }
   };
 
+  // Check if Axios make the sending better
   const postData = () => {
     const dateCurr = new Date();
     const data = {
